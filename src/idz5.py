@@ -10,7 +10,7 @@
 # кликает левой кнопкой мыши. Координаты события хранятся в его атрибутах x и y (event.x, event.y).
 
 
-from tkinter import Tk, Canvas
+from tkinter import Canvas, Tk
 
 
 class BallMover:

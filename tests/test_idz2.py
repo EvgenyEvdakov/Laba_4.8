@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import sys
 import unittest
 from tkinter import Tk
-import sys
 
-sys.path.append('../src')
+
+sys.path.append("../src")
 from idz2 import TextToListApp
+
 
 class TestTextToListApp(unittest.TestCase):
     def setUp(self):
@@ -36,7 +38,7 @@ class TestTextToListApp(unittest.TestCase):
     def test_add_empty_text(self):
         """Тестируем, что пустая строка не добавляется"""
         # Оставляем поле Entry пустым
-        self.app.text_entry.delete(0, 'end')
+        self.app.text_entry.delete(0, "end")
 
         # Имитируем нажатие клавиши Enter
         self.app.add_to_list()

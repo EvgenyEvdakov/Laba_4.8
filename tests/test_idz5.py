@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import sys
 import unittest
 from unittest.mock import MagicMock
-import sys
 
-sys.path.append('../src')
-from idz5 import Canvas, BallMover
+
+sys.path.append("../src")
+from idz5 import BallMover, Canvas
 
 
 # Подключаем код с классом BallMover

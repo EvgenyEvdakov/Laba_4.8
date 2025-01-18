@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import sys
 import unittest
 from tkinter import Tk
-import sys
 
-sys.path.append('../src')
+
+sys.path.append("../src")
 from idz1 import ProductTransferApp
+
 
 class TestProductTransferApp(unittest.TestCase):
     def setUp(self):
@@ -46,7 +48,6 @@ class TestProductTransferApp(unittest.TestCase):
         self.assertEqual(self.app.product_list.size(), 7)
         self.assertEqual(self.app.product_list.get(self.app.product_list.size() - 1), "Хлеб")
         self.assertEqual(self.app.cart_list.size(), 0)  # Корзина пуста
-
 
 
 if __name__ == "__main__":

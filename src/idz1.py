@@ -8,7 +8,7 @@
 # Предусмотрите возможность множественного выбора элементов списка и их перемещения.
 
 import tkinter as tk
-from tkinter import Listbox, Button, MULTIPLE
+from tkinter import MULTIPLE, Button, Listbox
 
 
 class ProductTransferApp:

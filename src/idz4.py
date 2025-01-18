@@ -5,38 +5,35 @@
 
 import tkinter as tk
 
+
 def draw_scene(canvas, width, height):
     # Небо
     canvas.create_rectangle(0, 0, width, height, fill="white", outline="")
 
     # Крыша дома
     canvas.create_polygon(
-        width // 2 - 70, height // 2,  # Левая точка крыши
-        width // 2 + 70, height // 2,  # Правая точка крыши
-        width // 2, height // 2 - 100,  # Верхняя точка крыши
-        fill="lightblue", outline=""
+        width // 2 - 70,
+        height // 2,  # Левая точка крыши
+        width // 2 + 70,
+        height // 2,  # Правая точка крыши
+        width // 2,
+        height // 2 - 100,  # Верхняя точка крыши
+        fill="lightblue",
+        outline="",
     )
 
     # Тело дома
     canvas.create_rectangle(
-        width // 2 - 50, height // 2,
-        width // 2 + 50, height // 2 + 100,
-        fill="lightblue", outline=""
+        width // 2 - 50, height // 2, width // 2 + 50, height // 2 + 100, fill="lightblue", outline=""
     )
 
     # Солнце
-    canvas.create_oval(
-        width - 100, 50,
-        width - 50, 100,
-        fill="orange", outline=""
-    )
+    canvas.create_oval(width - 100, 50, width - 50, 100, fill="orange", outline="")
 
     # Трава
     for x in range(0, width, 15):
         canvas.create_arc(
-            x, height - 80, x + 30, height - 20,
-            start=120, extent=60,
-            style=tk.ARC, outline="green", width=2
+            x, height - 80, x + 30, height - 20, start=120, extent=60, style=tk.ARC, outline="green", width=2
         )
 
 

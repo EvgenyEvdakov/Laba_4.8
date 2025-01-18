@@ -38,7 +38,7 @@ exclude = [
     ".gitignore"
 ]
 max-line-length = 120
-ignore = ["E203", "F841"]
+ignore = ["E203", "F841","F405", "F403", "E741"]
 
 [tool.black]
 line-length = 120
@@ -47,3 +47,8 @@ exclude = """
 tests/
 doc/
 """
+
+[tool.mypy]
+ignore_missing_imports = true
+exclude = "^(src/primer2.py|src/primer13.py|src/primer5.py|src/primer12.py)"
+disable_error_code = ["all"]

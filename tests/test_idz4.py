@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import unittest
-import tkinter as tk
 import sys
+import tkinter as tk
+import unittest
 
-sys.path.append('../src')
+
+sys.path.append("../src")
 from idz4 import draw_scene
 
 

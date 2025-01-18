@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import sys
 import unittest
 from tkinter import Tk
-import sys
 
-sys.path.append('../src')
+
+sys.path.append("../src")
 from idz3 import ResizableTextApp
 
 
@@ -59,6 +60,7 @@ class TestResizableTextApp(unittest.TestCase):
         height = int(self.app.text_area["height"])
         self.assertEqual(width, 25)
         self.assertEqual(height, 12)
+
 
 if __name__ == "__main__":
     unittest.main()

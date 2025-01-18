@@ -5,6 +5,7 @@
 
 from tkinter import *
 
+
 def add_item():
     box.insert(END, entry.get())
     entry.delete(0, END)
@@ -18,7 +19,7 @@ def del_list():
 
 
 def save_list():
-    with open('list000.txt', 'w') as f:
+    with open("list000.txt", "w") as f:
         f.writelines("\n".join(box.get(0, END)))
 
 
